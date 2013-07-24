@@ -1,0 +1,86 @@
+# http://superuser.com/questions/200382/how-do-i-get-tmux-to-open-up-a-set-of-panes-without-manually-entering-them
+# https://wiki.archlinux.org/index.php/Tmux
+
+# social_stream
+set default-path ~/dev/social_stream
+new -s Work -n dev
+
+set default-path ~/dev/social_stream
+splitw -h -p 50
+splitw -v -p 50 -t 0
+splitw -v -p 50 -t 1
+
+# demo-social-stream
+set default-path ~/dev/social_stream-staging
+neww -n demo
+splitw -h -p 50
+set default-path ~/dev/social_stream-demo
+splitw -v -p 50 -t 0
+splitw -v -p 50 -t 1
+
+# social_stream-stable
+#
+set default-path ~/dev/social_stream-stable/spec/dummy
+neww -n stable
+set default-path ~/dev/social_stream-stable
+splitw -h -p 50
+splitw -v -p 50 -t 0
+splitw -v -p 50 -t 1
+
+# piglobe
+set default-path ~/dev/piglove
+neww -n piglobe
+set default-path ~/dev/social_stream
+splitw -h -p 50
+splitw -v -p 50 -t 0
+splitw -v -p 50 -t 1
+
+# ViSH
+#
+set default-path ~/dev/vish
+neww -n vish
+splitw -h -p 50
+set default-path ~/dev/social_stream
+splitw -v -p 50 -t 0
+splitw -v -p 50 -t 1
+
+# FI-WARE IDM
+#
+set default-path ~/dev/fi-ware-idm
+neww -n idm
+splitw -h -p 50
+set default-path ~/dev/social_stream
+splitw -v -p 50 -t 0
+splitw -v -p 50 -t 1
+
+# social_stream-refactor
+#
+#set default-path ~/dev/social_stream-refactor/spec/dummy
+#neww -n refactor
+#set default-path ~/dev/social_stream-refactor
+#splitw -h -p 50
+#splitw -v -p 50 -t 0
+#splitw -v -p 50 -t 1
+
+# SocialCheesecake
+#set default-path ~/dev/SocialCheesecake/src
+#neww -n SocialCheesecake
+#splitw -h -p 50
+#splitw -v -p 50 -t 0
+#splitw -v -p 50 -t 1
+
+# facebook-social-cheesecake
+#set default-path ~/dev/facebook-social-cheesecake
+#neww -n facebook-cheesecake
+#splitw -h -p 50
+#splitw -v -p 50 -t 0
+#splitw -v -p 50 -t 1
+
+
+set default-path ~/dev
+neww -n misc
+
+selectw -t 0
+selectp -t 0
+
+
