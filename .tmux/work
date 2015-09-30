@@ -7,15 +7,11 @@ new -s Work -n root -c ~
 # pear2pear
 neww -n pear -c ~/dev/pear2pear
 splitw -h -p 50 -c ~/dev/pear2pear
-splitw -v -p 50 -t 0 -c ~/dev/pear2pear
-splitw -v -p 50 -t 1 -c ~/dev/pear2pear
 
-# swellrt
+# devops
 #
-neww -n swellrt -c ~/dev/swellrt
-splitw -h -p 50 -c ~/dev/swellrt
-splitw -v -p 50 -t 0 -c ~/dev/swellrt
-splitw -v -p 50 -t 1 -c ~/dev/swellrt
+neww -n devops -c ~
+splitw -h -p 50 -c ~
 
 # Example social stream
 #
