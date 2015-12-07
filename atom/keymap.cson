@@ -1,0 +1,2 @@
+'atom-text-editor.vim-mode.normal-mode':
+  'ctrl-t': 'fuzzy-finder:toggle-file-finder'
