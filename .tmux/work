@@ -4,9 +4,9 @@
 # root
 new -s Work -n root -c ~
 
-# pear2pear
-neww -n pear -c ~/dev/pear2pear
-splitw -h -p 50 -c ~/dev/pear2pear
+# teem
+neww -n teem -c ~/dev/teem
+splitw -h -p 50 -c ~/dev/teem
 
 # devops
 #
