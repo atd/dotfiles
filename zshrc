@@ -38,3 +38,9 @@ zplug "plugins/pyenv",      from:oh-my-zsh
 zplug "themes/miloshadzic", from:oh-my-zsh, as:theme
 
 zplug load
+
+path+=('/home/atd/.local/bin')
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
