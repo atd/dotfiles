@@ -32,6 +32,7 @@ zplug "plugins/rvm",        from:oh-my-zsh
 zplug "plugins/ruby",       from:oh-my-zsh
 zplug "plugins/rails",      from:oh-my-zsh
 zplug "plugins/tmux",       from:oh-my-zsh
+zplug "plugins/pyenv",      from:oh-my-zsh
 
 #zplug "themes/jreese", from:oh-my-zsh, as:theme
 zplug "themes/miloshadzic", from:oh-my-zsh, as:theme
