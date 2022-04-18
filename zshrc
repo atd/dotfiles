@@ -19,20 +19,21 @@ eval "$(direnv hook zsh)"
 
 # rvm
 setopt nullglob
-. /usr/local/rvm/scripts/rvm
+. /home/atd/.rvm/scripts/rvm
 
 source ~/.zplug/init.zsh
 
-zplug "plugins/autojump",   from:oh-my-zsh
-zplug "plugins/bundler",    from:oh-my-zsh
-zplug "plugins/capistrano", from:oh-my-zsh
-zplug "plugins/git",        from:oh-my-zsh
-zplug "plugins/rake",       from:oh-my-zsh
-zplug "plugins/rvm",        from:oh-my-zsh
-zplug "plugins/ruby",       from:oh-my-zsh
-zplug "plugins/rails",      from:oh-my-zsh
-zplug "plugins/tmux",       from:oh-my-zsh
-zplug "plugins/pyenv",      from:oh-my-zsh
+zplug "plugins/autojump",       from:oh-my-zsh
+zplug "plugins/bundler",        from:oh-my-zsh
+zplug "plugins/capistrano",     from:oh-my-zsh
+zplug "plugins/git",            from:oh-my-zsh
+zplug "plugins/rake",           from:oh-my-zsh
+zplug "plugins/rvm",            from:oh-my-zsh
+zplug "plugins/ruby",           from:oh-my-zsh
+zplug "plugins/rails",          from:oh-my-zsh
+zplug "plugins/tmux",           from:oh-my-zsh
+zplug "plugins/pyenv",          from:oh-my-zsh
+zplug "plugins/docker-compose", from:oh-my-zsh
 
 #zplug "themes/jreese", from:oh-my-zsh, as:theme
 zplug "themes/miloshadzic", from:oh-my-zsh, as:theme
