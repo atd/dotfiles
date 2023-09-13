@@ -34,6 +34,7 @@ zplug "plugins/rails",          from:oh-my-zsh
 zplug "plugins/tmux",           from:oh-my-zsh
 zplug "plugins/virtualenvwrapper", from:oh-my-zsh
 zplug "plugins/docker-compose", from:oh-my-zsh
+zplug "plugins/nvm", from:oh-my-zsh
 
 #zplug "themes/jreese", from:oh-my-zsh, as:theme
 zplug "themes/miloshadzic", from:oh-my-zsh, as:theme
