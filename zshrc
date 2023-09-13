@@ -15,11 +15,11 @@ autoload -U select-word-style
 select-word-style bash
 bindkey \^U backward-kill-line
 
-eval "$(direnv hook zsh)"
+command -v direnv &> /dev/null && eval "$(direnv hook zsh)"
 
 # rvm
 setopt nullglob
-. /home/atd/.rvm/scripts/rvm
+[ -d $HOME/.rvm ] && . $HOME/.rvm/scripts/rvm
 
 source ~/.zplug/init.zsh
 
@@ -44,4 +44,4 @@ zplug load
 path=('/home/atd/bin' $path '/home/atd/.local/bin')
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+[ -d $HOME/.rvm ] && export PATH="$PATH:$HOME/.rvm/bin"
